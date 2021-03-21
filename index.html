@@ -21,9 +21,15 @@
     <header class="title">
       <h1 class="title-1">Daily Agenda</h1>
       <p id="nowDay" class="day"></p>
-      <p id="nowTime" class="day">Currently the time is:</p>
+      <p id="now-time" class="day">Currently the time is:</p>
     </header>
-    <div class="agendaContainer"></div>
+    <div class="agendaContainer">
+      <div class="row time-block">
+        <div class="col-sm-1 hour">08.00</div>
+            <textarea class="description col-sm-10" data-hour="08">Enter your notes for the hour</textarea>
+          <button class="col-sm-1 saveBtn" data-hour="08" id="hard-save">Save notes</div>
+        </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -34,7 +40,7 @@
       integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
     <script
